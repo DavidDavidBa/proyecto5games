@@ -1,0 +1,18 @@
+@media (max-width: 620px) {
+  .win > h3 {
+    font-size: 40px;
+  }
+
+  .win > div {
+    width: 120px;
+  }
+
+  .win > div > button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .win > div > button > img {
+    width: 100%;
+  }
+}

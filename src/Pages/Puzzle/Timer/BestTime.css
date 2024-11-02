@@ -1,0 +1,40 @@
+#puzzle > .highScore {
+  width: 60%;
+  height: 70%;
+  border: none;
+  background-color: var(--gh-color01);
+}
+
+#puzzle > .highScore > h2 {
+  color: var(--gh-color02);
+}
+
+#puzzle > .highScore > button {
+  margin-top: var(--gh-margin-m);
+}
+
+@media (max-width: 620px) {
+  #puzzle > .highScore > h2 {
+    font-size: 15px;
+  }
+  #puzzle > .highScore > div {
+    padding: 5px;
+    min-height: 25px;
+  }
+
+  #puzzle > .highScore > div * {
+    font-size: 12px;
+  }
+
+  #puzzle > .highScore {
+    padding: var(--gh-padding-s) var(--gh-padding-xs);
+  }
+
+  #puzzle > .highScore > button {
+    width: 30px;
+  }
+
+  #puzzle > .highScore > button > img {
+    width: 100%;
+  }
+}

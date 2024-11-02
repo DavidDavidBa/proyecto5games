@@ -1,0 +1,43 @@
+#puzzle {
+  width: 600px;
+  height: 450px;
+  background-image: url('./public/assets/Puzzle/todo.png');
+  background-size: cover;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  position: relative;
+}
+
+#puzzle > .play {
+  top: 50%;
+}
+
+#puzzle > div {
+  background-color: var(--gh-colorpuzzle01);
+  border: 1px solid rgb(167, 167, 167);
+  width: 150px;
+  height: 150px;
+}
+
+.piezas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: var(--gh-padding-s);
+  margin: var(--gh-margin-l);
+  background-color: var(--gh-colorpuzzle01);
+  min-height: 120px;
+  border: 1px solid black;
+}
+
+.piezas > img {
+  width: 100px;
+  height: 100px;
+}
+
+.inserted {
+  width: 150px;
+  height: 150px;
+}

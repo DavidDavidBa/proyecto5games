@@ -1,0 +1,13 @@
+@media (max-width: 620px) {
+  #catching {
+    max-width: 350px;
+    margin-bottom: 50px;
+  }
+  .perrete {
+    width: 50px;
+  }
+
+  .element {
+    width: 30px;
+  }
+}

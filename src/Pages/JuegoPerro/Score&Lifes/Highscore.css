@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+.highScore {
+  width: 60%;
+  height: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  border-radius: var(--gh-border-radius);
+}
+
+.highScore * {
+  font-family: 'Lilita One', sans-serif;
+}
+
+.highScore > h2 {
+  color: #efd61d;
+  margin-bottom: var(--gh-margin-s);
+}
+
+.highScore > div {
+  width: 100%;
+  border-bottom: 2px solid #efd61d;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.highScore > div > h3 {
+  position: absolute;
+  left: 10px;
+  color: #4c6a66;
+}
+
+.highScore > div > h4 {
+  color: #629089;
+  display: block;
+  margin: auto;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.highScore > button {
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  margin-top: var(--gh-margin-l);
+}
+
+.highScore > button > img {
+  width: 100%;
+}
+
+@media (max-width: 620px) {
+  .highScore {
+    width: 60%;
+    height: 70%;
+  }
+
+  .highScore > h2 {
+    font-size: 20px;
+    margin-bottom: var(--gh-margin-xs);
+  }
+
+  .highScore > div > h3 {
+    left: 10px;
+    font-size: 15px;
+  }
+
+  .highScore > div > h4 {
+    font-size: 15px;
+  }
+
+  .highScore > button {
+    width: 30px;
+    height: 30px;
+    margin-top: var(--gh-margin-m);
+  }
+}

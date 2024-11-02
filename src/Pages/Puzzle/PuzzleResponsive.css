@@ -1,0 +1,35 @@
+@media (max-width: 620px) {
+  #puzzle {
+    width: 360px;
+    height: 275px;
+    margin-bottom: 30px;
+  }
+
+  #puzzle > .play {
+    width: 40px;
+    height: 40px;
+    top: 60%;
+  }
+  #puzzle > .play > img {
+    width: 100%;
+  }
+
+  #puzzle > div {
+    width: 90px;
+    height: 90px;
+  }
+
+  .piezas {
+    margin: var(--gh-margin-m);
+  }
+
+  .piezas > img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .inserted {
+    width: 90px;
+    height: 90px;
+  }
+}

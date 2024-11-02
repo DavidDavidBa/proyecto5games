@@ -1,0 +1,21 @@
+.draw {
+  width: 100%;
+  height: 100%;
+  background-color: var(--gh-colorTres01);
+  border-radius: var(--gh-border-radius-tres);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.draw > h3 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: var(--gh-margin-s);
+}

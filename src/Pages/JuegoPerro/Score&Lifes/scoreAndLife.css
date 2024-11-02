@@ -1,0 +1,47 @@
+.scoreAndLife {
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 20;
+}
+
+.score {
+  background-color: var(--gh-color02);
+  width: min-content;
+  border-radius: var(--gh-border-radius);
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  padding: 5px 15px;
+  font-family: 'Figtree', sans-serif;
+}
+
+.score > p {
+  color: var(--gh-color01);
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.score > h4 {
+  color: var(--gh-color-score);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.lifes {
+  display: flex;
+}
+
+.life {
+  width: 30px;
+}
+
+@media (max-width: 620px) {
+  .life {
+    width: 15px;
+  }
+}

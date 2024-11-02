@@ -1,0 +1,55 @@
+#catching {
+  width: 600px;
+  height: 360px;
+  position: relative;
+  border-radius: var(--gh-border-radius);
+  background-image: url('./public/assets/JuegoPerro/cesped.png');
+  background-size: cover;
+  margin: auto;
+  padding: var(--gh-padding-s);
+  overflow: hidden;
+}
+
+.play {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play > img {
+  width: 50px;
+}
+
+.stop {
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.stop > img {
+  width: 35px;
+}
+
+.perrete {
+  width: 80px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.element {
+  width: 50px;
+  position: absolute;
+}

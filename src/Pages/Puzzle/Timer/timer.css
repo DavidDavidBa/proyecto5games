@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+.divTimer {
+  width: 150px;
+  margin: auto;
+  font-size: 20px;
+  margin-bottom: var(--gh-margin-m);
+  color: var(--gh-color02);
+}
+
+.divTimer * {
+  font-family: 'Lilita One', sans-serif;
+}
+
+@media (max-width: 620px) {
+  .divTimer {
+    width: 120px;
+    font-size: 15px;
+    margin-bottom: var(--gh-margin-s);
+  }
+}

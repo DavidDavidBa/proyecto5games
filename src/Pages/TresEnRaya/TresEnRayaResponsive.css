@@ -1,0 +1,33 @@
+@media (max-width: 620px) {
+  #tres {
+    width: 300px;
+    height: 300px;
+  }
+
+  #tres > .celda > img {
+    width: 30px;
+  }
+
+  .turn {
+    width: 250px;
+    gap: 15px;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .totWins {
+    width: 300px;
+    gap: 10px;
+    padding: 10px 15px;
+    margin-top: 15px;
+    border-radius: 30px;
+  }
+
+  .totWins > h3 {
+    font-size: 15px;
+  }
+
+  .reloadTris > img {
+    width: 20px;
+  }
+}

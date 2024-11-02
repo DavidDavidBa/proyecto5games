@@ -1,0 +1,17 @@
+.animWin {
+  animation: animWin 1.5s cubic-bezier(0.25, 1, 0.3, 1) both;
+}
+
+.selected {
+  background-color: var(--gh-color02);
+  color: var(--gh-color01);
+}
+
+@keyframes animWin {
+  from {
+    clip-path: inset(100% 0 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}

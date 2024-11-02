@@ -1,0 +1,23 @@
+.backToHome {
+  margin-top: var(--gh-margin-l);
+  padding: var(--gh-padding-s) var(--gh-padding-m);
+  border-radius: var(--gh-border-radius);
+  border: none;
+  background-color: var(--gh-color02);
+  color: var(--gh-color01);
+  display: flex;
+}
+
+.backToHome > img {
+  width: 20px;
+}
+
+@media (max-width: 620px) {
+  .backToHome {
+    margin-top: 0;
+  }
+
+  .backToHome > img {
+    width: 15px;
+  }
+}
