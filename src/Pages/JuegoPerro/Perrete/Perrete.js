@@ -46,8 +46,7 @@ const movePerrete = (e, perrete) => {
     }
   }
 }
-window.customElements.define(
-  'virtual-joystick'
+
   class VirtualJoystick extends HTMLElement {
     static #getDir = (degree) => {
       const dirs = ['ne', 'n', 'nw', 'w', 'sw', 's', 'se']
