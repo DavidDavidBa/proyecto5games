@@ -46,3 +46,7 @@ const movePerrete = (e, perrete) => {
     }
   }
 }
+const leftJoystick = new BABYLON.VirtualJoystick(true);
+const rightJoystick = new BABYLON.VirtualJoystick(false);
+leftJoystick.deltaPosition.x;
+leftJoystick.deltaPosition.y;
