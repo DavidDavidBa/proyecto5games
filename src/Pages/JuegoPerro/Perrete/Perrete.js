@@ -227,4 +227,4 @@ window.customElements.define('virtual-joystick', class VirtualJoystick extends H
       this.pointers.splice(pointerIndex, 1)
     }
   }
-})
+}
