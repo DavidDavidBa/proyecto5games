@@ -49,65 +49,6 @@ const movePerrete = (e, perrete) => {
 window.customElements.define(
   'virtual-joystick',
   class VirtualJoystick extends HTMLElement {
-    static #style = `
-      :host {
-          --radius: 65px;
-          --size: calc(var(--radius) * 2);
-      }
-      :host,
-      slot {
-          position: relative;
-          display: block;
-          width: var(--size);
-          height: var(--size);
-          touch-action: none;
-      }
-      slot {
-          --x: var(--radius);
-          --y: var(--radius);
-          border: 1px solid gray;
-          background-color: rgba(255, 255, 255, 0.3);
-          border-radius: 50%;
-          box-sizing: border-box;
-          transition: opacity 1s, background-color .2s;
-          &[part*="active"] {
-              background-color: rgba(255, 255, 255, 0.6);
-              &:after {
-                  background-color: rgba(255, 255, 255, 0.8);
-                  transition: transform .1s, background-color 0.2s;
-              }
-          }
-      }
-      slot:after,
-      slot:before {
-          content: "";
-          display: block;
-          position: absolute;
-          box-sizing: border-box;
-          border-radius: 50%;
-          width: 50px;
-          height: 50px;
-      }
-      slot:after {
-          border: 1px solid gray;
-          background-color: rgba(255, 255, 255, 0.5);
-          transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y)));
-          transition: transform .4s, background-color .2s;
-      }
-      slot:before {
-          border: 1px solid rgb(139, 139, 139);
-          transform: translate(calc(-50% + var(--radius)), calc(-50% + var(--radius)));
-      }
-      [part*="dynamic"] {
-          opacity: 0;
-      }
-      [part*="active"] {
-          opacity: 1;
-      }
-      [part*="box"]:after  {
-          transform: translate(calc(-50% + clamp(0px, var(--x), var(--size))), calc(-50% + clamp(0px, var(--y), var(--size))));
-      }
-  `
     static #getDir = (degree) => {
       const dirs = ['ne', 'n', 'nw', 'w', 'sw', 's', 'se']
       const acute = 45
