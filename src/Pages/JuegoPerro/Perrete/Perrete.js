@@ -46,7 +46,21 @@ const movePerrete = (e, perrete) => {
     }
   }
 }
-const leftJoystick = new BABYLON.VirtualJoystick(true);
-const rightJoystick = new BABYLON.VirtualJoystick(false);
-leftJoystick.deltaPosition.x;
-leftJoystick.deltaPosition.y;
+
+preload() {
+    let url = 'https://raw.githubusercontent.com/rexrainbow/phaser3-rex-notes/master/dist/rexvirtualjoystickplugin.min.js';
+    this.load.plugin('rexvirtualjoystickplugin', url, true);
+}
+this.joyStick = this.plugins.get('rexvirtualjoystickplugin').add(this, {
+      x: 55,
+      y: 400,
+      radius: 100,
+      base: this.add.circle(0, 0, 50, 0x888888),
+      thumb: this.add.circle(0, 0, 25, 0xcccccc),
+});
+this.joystickCursors = this.joyStick.createCursorKeys();
+this.cursors = this.input.keyboard.createCursorKeys();
+update() {
+  if (this.cursors.up.isDown || this.joystickCursors.up.isDown ) {
+  }
+}
