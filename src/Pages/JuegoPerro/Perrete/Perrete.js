@@ -76,8 +76,8 @@ const movePerrete = (e, perrete) => {
     calcCrow({ clientX, clientY }) {
       const { lock } = this.dataset
       this.rect = this.element.getBoundingClientRect()
-      const dx = lock === 'x' ? this.#r : clientX - this.rect.left
-      const dy = lock === 'y' ? this.#r : clientY - this.rect.top
+      const dx = lock === 'x' ? this.r : clientX - this.rect.left
+      const dy = lock === 'y' ? this.r : clientY - this.rect.top
       const dxr = dx - this.r
       const dyr = dy - this.r
       const hypot = Math.hypot(dxr, dyr)
