@@ -47,10 +47,10 @@ const movePerrete = (e, perrete) => {
   }
 }
 
-preload() {
+preload() 
     let url = 'https://raw.githubusercontent.com/rexrainbow/phaser3-rex-notes/master/dist/rexvirtualjoystickplugin.min.js';
     this.load.plugin('rexvirtualjoystickplugin', url, true);
-}
+
 this.joyStick = this.plugins.get('rexvirtualjoystickplugin').add(this, {
       x: 55,
       y: 400,
@@ -60,7 +60,7 @@ this.joyStick = this.plugins.get('rexvirtualjoystickplugin').add(this, {
 });
 this.joystickCursors = this.joyStick.createCursorKeys();
 this.cursors = this.input.keyboard.createCursorKeys();
-update() {
+update() 
   if (this.cursors.up.isDown || this.joystickCursors.up.isDown ) {
   }
-}
+
